@@ -1,3 +1,5 @@
+module Heaps
+
 # Various heap implementation
 
 ###########################################################
@@ -43,6 +45,11 @@
 #
 ###########################################################
 
+using Compat: uninitialized, Nothing, Cvoid, AbstractDict
+
+
+
+
 # HT: handle type
 # VT: value type
 
@@ -60,12 +67,6 @@ end
 
 compare(c::LessThan, x, y) = x < y
 compare(c::GreaterThan, x, y) = x > y
-
-# heap implementations
-
-include("heaps/binary_heap.jl")
-include("heaps/mutable_binary_heap.jl")
-include("heaps/arrays_as_heaps.jl")
 
 # generic functions
 
@@ -132,3 +133,12 @@ Equivalent to `sort(arr, lt = <)[1:min(n, end)]`
 function nsmallest(n::Int, arr::AbstractVector{T}) where T
     return nextreme(GreaterThan(), n, arr)
 end
+
+# implementations
+include("heaps/binary_heap.jl")
+include("heaps/mutable_binary_heap.jl")
+include("heaps/arrays_as_heaps.jl")
+
+include("priorityqueue.jl")
+
+end # module

@@ -1,34 +1,18 @@
-[![Travis Build Status](https://travis-ci.org/JuliaCollections/DataStructures.jl.svg?branch=master)](https://travis-ci.org/JuliaCollections/DataStructures.jl)
+[![Travis Build Status](https://travis-ci.org/JuliaCollections/Heaps.jl.svg?branch=master)](https://travis-ci.org/JuliaCollections/Heaps.jl)
 [![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/5gw9xok4e58aixsv?svg=true)](https://ci.appveyor.com/project/kmsquire/datastructures-jl)
-[![Test Coverage](https://coveralls.io/repos/github/JuliaCollections/DataStructures.jl/badge.svg?branch=master)](https://coveralls.io/github/JuliaCollections/DataStructures.jl?branch=master)
-[![Test Coverage](https://codecov.io/github/JuliaCollections/DataStructures.jl/coverage.svg?branch=master)](https://codecov.io/github/JuliaCollections/DataStructures.jl?branch=master)
-[![PkgEval.jl Status on Julia 0.6](http://pkg.julialang.org/badges/DataStructures_0.6.svg)](http://pkg.julialang.org/?pkg=DataStructures&ver=0.6)
-[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://juliacollections.github.io/DataStructures.jl/latest)
+[![Test Coverage](https://coveralls.io/repos/github/JuliaCollections/Heaps.jl/badge.svg?branch=master)](https://coveralls.io/github/JuliaCollections/Heaps.jl?branch=master)
+[![Test Coverage](https://codecov.io/github/JuliaCollections/Heaps.jl/coverage.svg?branch=master)](https://codecov.io/github/JuliaCollections/Heaps.jl?branch=master)
+[![PkgEval.jl Status on Julia 0.6](http://pkg.julialang.org/badges/Heaps_0.6.svg)](http://pkg.julialang.org/?pkg=Heaps&ver=0.6)
+[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://juliacollections.github.io/Heaps.jl/latest)
 
-DataStructures.jl
+Heaps.jl
 =================
 
-This package implements a variety of data structures, including
+This package implements a variety of Heaps, and ontop of them a PriorityQueue.
 
--   Deque (implemented with an [unrolled linked
-    list](https://en.wikipedia.org/wiki/Unrolled_linked_list))
--   CircularBuffer
--   CircularDeque
--   Stack
--   Queue
--   Accumulators and Counters
--   Disjoint Sets
--   Binary Heap
--   Mutable Binary Heap
--   Ordered Dicts and Sets
--   Dictionaries with Defaults
--   Trie
--   Linked List
--   Sorted Dict, Sorted Multi-Dict and Sorted Set
--   DataStructures.IntSet
--   Priority Queue
+
 
 Resources
 ---------
 
--   **Documentation**: https://juliacollections.github.io/DataStructures.jl/latest
+-   **Documentation**: https://juliacollections.github.io/Heaps.jl/latest
