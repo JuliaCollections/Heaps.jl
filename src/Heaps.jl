@@ -48,7 +48,6 @@ module Heaps
 using Compat: uninitialized, Nothing, Cvoid, AbstractDict
 
 
-
 import Base: <, <=, ==, length, isempty, start, next, done, delete!,
                  show, dump, empty!, getindex, setindex!, get, get!,
                  in, haskey, keys, merge, copy, cat,
@@ -66,6 +65,12 @@ import Base: <, <=, ==, length, isempty, start, next, done, delete!,
 export BinaryHeap, binary_minheap, binary_maxheap, nlargest, nsmallest
 export MutableBinaryHeap, mutable_binary_minheap, mutable_binary_maxheap
 export heapify!, heapify, heappop!, heappush!, isheap
+
+
+export compare, top, top_with_handle, extract_all!
+export PriorityQueue, peek
+export  update!, enqueue!, dequeue!, dequeue_pair!
+
 
 # HT: handle type
 # VT: value type
