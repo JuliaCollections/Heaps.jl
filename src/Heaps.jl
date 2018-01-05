@@ -49,6 +49,23 @@ using Compat: uninitialized, Nothing, Cvoid, AbstractDict
 
 
 
+import Base: <, <=, ==, length, isempty, start, next, done, delete!,
+                 show, dump, empty!, getindex, setindex!, get, get!,
+                 in, haskey, keys, merge, copy, cat,
+                 push!, pop!, shift!, unshift!, insert!,
+                 union!, delete!, similar, sizehint!,
+                 isequal, hash,
+                 map, reverse,
+                 first, last, eltype, getkey, values, sum,
+                 merge, merge!, lt, Ordering, ForwardOrdering, Forward,
+                 ReverseOrdering, Reverse, Lt,
+                 isless,
+                 union, intersect, symdiff, setdiff, issubset,
+                 find, searchsortedfirst, searchsortedlast, endof, in
+
+export BinaryHeap, binary_minheap, binary_maxheap, nlargest, nsmallest
+export MutableBinaryHeap, mutable_binary_minheap, mutable_binary_maxheap
+export heapify!, heapify, heappop!, heappush!, isheap
 
 # HT: handle type
 # VT: value type
