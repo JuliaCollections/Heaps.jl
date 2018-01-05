@@ -41,16 +41,6 @@ end
     pq2 = PriorityQueue(priorities)
     test_isrequested!(pq2, 1:n)
 
-    # building from two lists (deprecated)
-    ks, vs = 1:n, rand(1:pmax, n)
-    println("\nThe following warning is expected:")
-    pq3 = PriorityQueue(ks,vs)
-
-    # building from two lists of different sizes - throws an error
-    ks, vs = 1:n+1, rand(1:pmax, n)
-    println("\nThe following warning is expected:")
-    @test_throws ArgumentError PriorityQueue(ks, vs)
-
     # building from Dict
     priorities = Dict(zip(ks, vs))
     pq4 = PriorityQueue(priorities)
