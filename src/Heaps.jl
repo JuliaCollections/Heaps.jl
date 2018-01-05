@@ -72,6 +72,12 @@ export PriorityQueue, peek
 export  update!, enqueue!, dequeue!, dequeue_pair!
 
 
+function not_iterator_of_pairs(kv)
+    return any(x->isempty(methodswith(typeof(kv), x, true)),
+               [start, next, done]) ||
+           any(x->!isa(x, Union{Tuple,Pair}), kv)
+end
+
 # HT: handle type
 # VT: value type
 

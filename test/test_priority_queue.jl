@@ -42,6 +42,7 @@ end
     test_isrequested!(pq2, 1:n)
 
     # building from Dict
+    ks, vs = 1:n, rand(1:pmax, n)
     priorities = Dict(zip(ks, vs))
     pq4 = PriorityQueue(priorities)
     test_issorted!(pq4, priorities)
